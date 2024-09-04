@@ -5,3 +5,4 @@
 
 override_dh_auto_install:
 	$(MAKE) DESTDIR=$$(pwd)/debian/tmp PREFIX=/usr RUN_LDCONFIG=0 -C liblabjackusb install
+	install -m 0644 -D $$(pwd)/90-labjack.rules $$(pwd)/debian/tmp/lib/udev/rules.d/55-labjack.rules
