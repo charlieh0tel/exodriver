@@ -1,0 +1,5 @@
+liblabjackusb (2.7.0-1) UNRELEASED; urgency=medium
+
+  * Initial packaging.
+
+ -- Christopher Hoover <ch@murgatroid.com>  Wed, 04 Sep 2024 10:00:35 -0700

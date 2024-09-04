@@ -1,0 +1,22 @@
+Source: liblabjackusb
+Maintainer: Christopher Hoover <ch@murgatroid.com>
+Build-Depends: debhelper-compat (= 13)
+Vcs-Git: https://github.com/charlieh0tel/exodriver
+
+Package: liblabjackusb
+Priority: optional
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Section: libs
+Description: Programming library development files for liblabjackusb.
+ Programming library development files for compiling programs
+ against liblabjackusb.
+
+Package: liblabjackusb-dev
+Priority: optional
+Architecture: any
+Depends: liblabjackusb (= ${binary:Version}), libc6-dev | libc-dev, ${misc:Depends}
+Section: libdevel
+Description: Library to communicate with LabJack devices.
+ Library to communicate with LabJack U3, U6, UE9, Digit, T4 and T7 devices
+ via USB.

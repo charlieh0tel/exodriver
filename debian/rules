@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --sourcedirectory=liblabjackusb --builddirectory=liblabjackusb
+
+override_dh_auto_install:
+	$(MAKE) DESTDIR=$$(pwd)/debian/tmp PREFIX=/usr RUN_LDCONFIG=0 -C liblabjackusb install
